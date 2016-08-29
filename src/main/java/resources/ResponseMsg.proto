@@ -1,0 +1,6 @@
+option java_package = "org.xtwy.pb.protocol";
+option java_outer_classname = "ResponseMsgProbuf";
+  
+  message  ResponseMsg {
+    required bytes response = 1;
+}
