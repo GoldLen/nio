@@ -20,6 +20,7 @@ public class SocketChannelDemo {
 		//默认是阻塞的，当read的时候，会阻塞，直到有数据进来
 		// socketChannel.configureBlocking(false);
 
+		Thread.sleep(10000);
 		String request = "hello 夜行侠老师";
 		ByteBuffer buf = ByteBuffer.wrap(request.getBytes("UTF-8"));
 		socketChannel.write(buf);
